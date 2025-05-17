@@ -1,13 +1,13 @@
 
 "use client";
 
-import { useFormState, useFormStatus } from "react-dom";
+import { useActionState, useEffect, useRef } from "react"; // Updated import
+import { useFormStatus } from "react-dom";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { contactFormSchema, type ContactFormState } from "@/types"; // Updated import path
+import { contactFormSchema, type ContactFormState } from "@/types";
 import { submitContactForm } from "@/lib/actions";
 import type { z } from "zod";
-import { useEffect, useRef } from "react";
 
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -32,7 +32,8 @@ export default function ContactForm() {
   const formRef = useRef<HTMLFormElement>(null);
 
   const initialState: ContactFormState = { message: "", errors: {}, success: false };
-  const [state, formAction] = useFormState(submitContactForm, initialState);
+  // Updated to use React.useActionState
+  const [state, formAction] = useActionState(submitContactForm, initialState); 
 
   const form = useForm<ContactFormData>({
     resolver: zodResolver(contactFormSchema),
