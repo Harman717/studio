@@ -10,7 +10,6 @@ const projectsData: Project[] = [
     imageUrl: "https://placehold.co/400x250.png",
     imageHint: "sensor data",
     tags: ["Python", "Conditional GAN", "CGAN", "RFregressor", "Gaussian Process Classifier", "SVM", "FFT", "Machine Learning", "Data Synthesis"],
-    // repoLink: "your-repo-link-here", // Add your repository link if available
   },
   {
     id: "2",
@@ -19,7 +18,6 @@ const projectsData: Project[] = [
     imageUrl: "https://placehold.co/400x250.png",
     imageHint: "web application",
     tags: ["Spring Boot", "React", "Java", "MySQL"],
-    repoLink: "https://github.com/Harman717/Training-Placement-Portal",
   },
   {
     id: "3",
@@ -28,7 +26,6 @@ const projectsData: Project[] = [
     imageUrl: "https://placehold.co/400x250.png",
     imageHint: "AI detection",
     tags: ["Python", "OpenCV", "YOLO", "Deep Learning"],
-    repoLink: "https://github.com/Harman717/YOLO-Mask-Detection",
   },
   {
     id: "4",
@@ -37,7 +34,6 @@ const projectsData: Project[] = [
     imageUrl: "https://placehold.co/400x250.png",
     imageHint: "machine learning",
     tags: ["TensorFlow", "Python", "Keras", "Machine Learning"],
-    repoLink: "https://github.com/Harman717/Handwriting-Recognition-TF",
   },
   {
     id: "5",
@@ -46,7 +42,6 @@ const projectsData: Project[] = [
     imageUrl: "https://placehold.co/400x250.png",
     imageHint: "API microservices",
     tags: ["Spring Boot", "Docker", "Kubernetes", "CI/CD", "Jenkins"],
-    repoLink: "https://github.com/Harman717/REST-API-CICD-K8s",
   },
 ];
 
@@ -66,4 +61,3 @@ export default function ProjectsSection() {
     </section>
   );
 }
-
