@@ -1,3 +1,4 @@
+
 import Link from "next/link";
 import { Code2, Github, Linkedin, Mail } from "lucide-react";
 
@@ -5,6 +6,7 @@ const navLinks = [
   { href: "#home", label: "Home" },
   { href: "#about", label: "About" },
   { href: "#projects", label: "Projects" },
+  { href: "#experience", label: "Experience" },
   { href: "#contact", label: "Contact" },
 ];
 
