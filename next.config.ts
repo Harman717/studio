@@ -40,6 +40,12 @@ const nextConfig: NextConfig = {
         hostname: 'www.mdpi.com',
         port: '',
         pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'satorianalytics.com',
+        port: '',
+        pathname: '/**',
       }
     ],
   },
