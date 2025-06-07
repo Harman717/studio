@@ -23,8 +23,8 @@ const projectsData: Project[] = [
     id: "3",
     title: "YOLO Mask Detection",
     description: "A real-time mask detection system using YOLO (You Only Look Once) algorithm to identify people wearing or not wearing face masks.",
-    imageUrl: "/yolo-mask-detection.png",
-    imageHint: "security vision",
+    imageUrl: "https://www.mdpi.com/electronics/electronics-12-00408/article_deploy/html/images/electronics-12-00408-g003.png",
+    imageHint: "object detection diagram",
     tags: ["Python", "OpenCV", "YOLO", "Deep Learning"],
   },
   {
