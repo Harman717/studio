@@ -2,7 +2,7 @@
 import Image from "next/image";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Briefcase, MapPin, CalendarDays, Award } from "lucide-react";
+import { Briefcase, MapPin, CalendarDays } from "lucide-react";
 
 interface ExperienceItem {
   id: string;
@@ -24,29 +24,23 @@ const experienceData: ExperienceItem[] = [
     id: "1",
     title: "Summer Internship",
     company: "Diginique TechLabs",
-    companyLogoUrl: "https://placehold.co/80x80.png",
+    companyLogoUrl: "https://media.licdn.com/dms/image/v2/C510BAQESCMZVWcVopA/company-logo_200_200/company-logo_200_200/0/1630624943898?e=2147483647&v=beta&t=JKpGL3Kfbuu1Qgt-oghEMUPKlJ1cxksIYis9ZPAUdzM",
     companyLogoHint: "tech logo",
     duration: "2 mos",
     dates: "Jun 2023 - Jul 2023",
     location: "Jalandhar, Punjab, India · Remote",
     skills: ["Data Structures", "C++"],
-    certificateText: "Intern completion certificate",
-    certificateImageUrl: "https://placehold.co/150x100.png",
-    certificateImageHint: "certificate document",
   },
   {
     id: "2",
-    title: "Intern",
+    title: "Deep Learning Intern",
     company: "ResoluteAI.in",
-    companyLogoUrl: "https://placehold.co/80x80.png",
-    companyLogoHint: "AI logo",
+    companyLogoUrl: "https://resoluteaisoftware.in/static/media/logo.eebe05c78fec55d8a0b7.webp",
+    companyLogoHint: "AI company logo",
     duration: "4 mos",
     dates: "Nov 2022 - Feb 2023",
     location: "India",
-    skills: ["Deep Learning", "Machine Learning"],
-    certificateText: "Deep learning intern certificate",
-    certificateImageUrl: "https://placehold.co/150x100.png",
-    certificateImageHint: "certificate document",
+    skills: ["Deep Learning", "Machine Learning", "YOLO", "Python", "EasyOCR", "Data Annotation"],
   },
 ];
 
@@ -103,26 +97,6 @@ export default function ExperienceSection() {
                     ))}
                   </div>
                 </div>
-
-                {exp.certificateText && exp.certificateImageUrl && (
-                  <div className="mt-4 pt-4 border-t border-border">
-                    <h4 className="font-semibold text-foreground mb-2 flex items-center">
-                      <Award className="h-5 w-5 mr-2 text-accent" />
-                      Certificate
-                    </h4>
-                    <div className="flex items-center gap-4">
-                       <Image
-                        src={exp.certificateImageUrl}
-                        alt={exp.certificateText}
-                        width={120}
-                        height={80}
-                        className="rounded-md border object-contain"
-                        data-ai-hint={exp.certificateImageHint}
-                      />
-                      <p className="text-sm text-foreground/80">{exp.certificateText}</p>
-                    </div>
-                  </div>
-                )}
               </CardContent>
             </Card>
           ))}
