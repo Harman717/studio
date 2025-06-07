@@ -14,15 +14,15 @@ interface ProjectCardProps {
 export default function ProjectCard({ project }: ProjectCardProps) {
   return (
     <Card className="flex flex-col h-full overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 ease-in-out transform hover:-translate-y-1 group">
-      <div className="relative w-full h-48 md:h-56 bg-muted/30"> {/* Added a light background for contain */}
+      <div className="relative w-full h-48 md:h-56 bg-muted/30 group-hover:bg-muted/40 transition-colors">
         <Image
           src={project.imageUrl}
           alt={project.title}
           fill
-          style={{ objectFit: "contain" }} // Changed from "cover" to "contain"
+          style={{ objectFit: "contain" }}
           data-ai-hint={project.imageHint}
-          className="transition-transform duration-500 group-hover:scale-105"
-          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          // Removed className and sizes for simplicity, relying on fill and parent.
+          // The transition-transform for hover can be on the parent div if needed.
         />
       </div>
       <CardHeader>
