@@ -39,8 +39,8 @@ const projectsData: Project[] = [
     id: "5",
     title: "Huffman Coding Implementation",
     description: "An implementation of the Huffman coding algorithm for lossless data compression. This project demonstrates understanding of priority queues and tree data structures to achieve efficient data encoding.",
-    imageUrl: "https://placehold.co/400x250.png",
-    imageHint: "data compression algorithm",
+    imageUrl: "https://brilliant-staff-media.s3-us-west-2.amazonaws.com/tiffany-wang/VEIWKBhSSc.png",
+    imageHint: "Huffman tree diagram",
     tags: ["JavaScript", "Data Structures", "Algorithms", "Huffman Coding"],
     repoLink: "", 
   },
@@ -48,8 +48,8 @@ const projectsData: Project[] = [
     id: "6",
     title: "Asymptotic Genius",
     description: "A project focused on the analysis and understanding of algorithmic complexity (Big O notation). Explores various algorithms and their performance characteristics. Implemented in JavaScript.",
-    imageUrl: "https://placehold.co/400x250.png",
-    imageHint: "algorithmic analysis",
+    imageUrl: "https://i.ytimg.com/vi/bxgTDN9c6rg/maxresdefault.jpg",
+    imageHint: "big O notation",
     tags: ["JavaScript", "Algorithms", "Complexity Analysis", "Data Structures"],
     repoLink: "https://github.com/Harman717/Asymptotic-genius",
   },
@@ -71,4 +71,3 @@ export default function ProjectsSection() {
     </section>
   );
 }
-
