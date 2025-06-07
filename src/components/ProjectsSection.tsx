@@ -31,7 +31,7 @@ const projectsData: Project[] = [
     id: "4",
     title: "Handwriting Recognition",
     description: "A TensorFlow-based model for recognizing handwritten digits and characters, trained on the MNIST dataset.",
-    imageUrl: "https://placehold.co/400x250.png",
+    imageUrl: "https://user-images.githubusercontent.com/73981982/116196276-402f1280-a76e-11eb-9e41-0ad26063189c.png",
     imageHint: "neural network",
     tags: ["TensorFlow", "Python", "Keras", "Machine Learning"],
   },
@@ -61,4 +61,3 @@ export default function ProjectsSection() {
     </section>
   );
 }
-
