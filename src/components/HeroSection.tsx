@@ -62,11 +62,10 @@ export default function HeroSection() {
           <CardContent className="p-8 md:p-12 flex flex-col md:flex-row items-center gap-8">
             <div className="relative w-40 h-40 md:w-48 md:h-48 rounded-full overflow-hidden shadow-lg border-4 border-primary flex-shrink-0">
               <Image
-                src="https://placehold.co/300x300.png"
+                src="/profile-harmandeep.jpg"
                 alt="Harmandeep Singh"
                 layout="fill"
                 objectFit="cover"
-                data-ai-hint="profile portrait"
                 priority
               />
             </div>
