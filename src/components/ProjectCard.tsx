@@ -5,7 +5,7 @@ import type { Project } from "@/types";
 import { Card, CardContent, CardFooter, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { ExternalLink, Github } from "lucide-react";
+import { ExternalLink } from "lucide-react";
 
 interface ProjectCardProps {
   project: Project;
@@ -21,8 +21,6 @@ export default function ProjectCard({ project }: ProjectCardProps) {
           fill
           style={{ objectFit: "contain" }}
           data-ai-hint={project.imageHint}
-          // Removed className and sizes for simplicity, relying on fill and parent.
-          // The transition-transform for hover can be on the parent div if needed.
         />
       </div>
       <CardHeader>
@@ -43,13 +41,6 @@ export default function ProjectCard({ project }: ProjectCardProps) {
           <Button variant="outline" size="sm" asChild>
             <Link href={project.liveLink} target="_blank" rel="noopener noreferrer">
               <ExternalLink className="mr-2 h-4 w-4" /> Live Demo
-            </Link>
-          </Button>
-        )}
-        {project.repoLink && (
-          <Button variant="ghost" size="sm" asChild>
-            <Link href={project.repoLink} target="_blank" rel="noopener noreferrer">
-              <Github className="mr-2 h-4 w-4" /> Source Code
             </Link>
           </Button>
         )}
