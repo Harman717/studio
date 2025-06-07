@@ -7,7 +7,7 @@ const projectsData: Project[] = [
     id: "1",
     title: "Manufacturing Data Synthesis & Wear Prediction",
     description: "Processed and transformed 165+ time-series sensor files into frequency-domain features using FFT, extracting 2,000+ features across 6 Sensors. Designed and trained a Conditional GAN (CGAN) to generate synthetic sensor data from a dataset provided by NASA, expanding the dataset by 100% and achieving 90%+ statistical similarity to real data. Integrated synthetic data into a newly created flank wear prediction model (using RFregressor, Gaussian Process Classifier, SVM for comparison), improving F1-score by 12-15% and enhancing robustness against class imbalance.",
-    imageUrl: "/cgan-diagram.png",
+    imageUrl: "https://miro.medium.com/v2/resize:fit:1400/1*ZKUo2QtHasnr8-RiqeJ_YA.png",
     imageHint: "GAN diagram",
     tags: ["Python", "Conditional GAN", "CGAN", "RFregressor", "Gaussian Process Classifier", "SVM", "FFT", "Machine Learning", "Data Synthesis"],
   },
