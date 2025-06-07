@@ -1,16 +1,17 @@
+
 import type { Project } from "@/types";
 import ProjectCard from "./ProjectCard";
 
 const projectsData: Project[] = [
   {
     id: "1",
-    title: "E-Commerce React App",
-    description: "A full-featured e-commerce platform built with React, Redux, and Node.js, supporting product listings, cart management, and user authentication.",
+    title: "Manufacturing Data Synthesis & Wear Prediction",
+    description: "Processed and transformed 165+ time-series sensor files into frequency-domain features using FFT, extracting 2,000+ features across 6 Sensors. Designed and trained a Conditional GAN (CGAN) to generate synthetic sensor data, expanding the dataset by 100% and achieving 90%+ statistical similarity to real data. Integrated synthetic data into a newly created flank wear prediction model (using RFregressor, Gaussian Process Classifier, SVM for comparison), improving F1-score by 12-15% and enhancing robustness against class imbalance.",
     imageUrl: "https://placehold.co/400x250.png",
-    imageHint: "ecommerce website",
-    tags: ["React", "Redux", "Node.js", "MongoDB"],
-    liveLink: "#", // Placeholder
-    repoLink: "https://github.com/Harman717/E-Commerce-React-App",
+    imageHint: "sensor data",
+    tags: ["Python", "Conditional GAN", "CGAN", "RFregressor", "Gaussian Process Classifier", "SVM", "FFT", "Machine Learning", "Data Synthesis"],
+    // repoLink: "your-repo-link-here", // Add your repository link if available
+    // liveLink: "your-live-link-here", // Add your live demo link if available
   },
   {
     id: "2",
