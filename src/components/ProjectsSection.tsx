@@ -6,12 +6,11 @@ const projectsData: Project[] = [
   {
     id: "1",
     title: "Manufacturing Data Synthesis & Wear Prediction",
-    description: "Processed and transformed 165+ time-series sensor files into frequency-domain features using FFT, extracting 2,000+ features across 6 Sensors. Designed and trained a Conditional GAN (CGAN) to generate synthetic sensor data, expanding the dataset by 100% and achieving 90%+ statistical similarity to real data. Integrated synthetic data into a newly created flank wear prediction model (using RFregressor, Gaussian Process Classifier, SVM for comparison), improving F1-score by 12-15% and enhancing robustness against class imbalance.",
+    description: "Processed and transformed 165+ time-series sensor files into frequency-domain features using FFT, extracting 2,000+ features across 6 Sensors. Designed and trained a Conditional GAN (CGAN) to generate synthetic sensor data from a dataset provided by NASA, expanding the dataset by 100% and achieving 90%+ statistical similarity to real data. Integrated synthetic data into a newly created flank wear prediction model (using RFregressor, Gaussian Process Classifier, SVM for comparison), improving F1-score by 12-15% and enhancing robustness against class imbalance.",
     imageUrl: "https://placehold.co/400x250.png",
     imageHint: "sensor data",
     tags: ["Python", "Conditional GAN", "CGAN", "RFregressor", "Gaussian Process Classifier", "SVM", "FFT", "Machine Learning", "Data Synthesis"],
     // repoLink: "your-repo-link-here", // Add your repository link if available
-    // liveLink: "your-live-link-here", // Add your live demo link if available
   },
   {
     id: "2",
@@ -67,3 +66,4 @@ export default function ProjectsSection() {
     </section>
   );
 }
+
