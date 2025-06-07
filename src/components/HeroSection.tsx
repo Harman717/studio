@@ -1,7 +1,6 @@
 
+import Image from "next/image";
 import ScrollDownArrow from "./ScrollDownArrow";
-import { Card, CardContent } from "@/components/ui/card";
-import AiCoreAnimation from "./AiCoreAnimation"; // Import the new component
 
 export default function HeroSection() {
   return (
@@ -59,23 +58,27 @@ export default function HeroSection() {
       </svg>
 
       <div className="container mx-auto px-4 relative z-10">
-        <Card className="max-w-3xl mx-auto bg-card/80 backdrop-blur-sm shadow-xl overflow-hidden">
-          <CardContent className="p-8 md:p-12 flex flex-col md:flex-row items-center gap-8">
-            <div className="relative w-40 h-40 md:w-48 md:h-48 rounded-full overflow-hidden shadow-lg border-4 border-primary flex-shrink-0 flex items-center justify-center bg-background/10">
-              {/* Replace Image with AiCoreAnimation */}
-              <AiCoreAnimation />
-            </div>
-            <div className="text-left">
-              <h1 className="text-4xl md:text-5xl font-bold text-primary mb-4">
-                Hi, I’m Harmandeep
-              </h1>
-              <p className="text-lg md:text-xl text-foreground/80 leading-relaxed">
-                A passionate tech explorer who loves building smart systems, playing football, and watching fantasy shows like Game of Thrones.
-              </p>
-            </div>
-          </CardContent>
-        </Card>
-        <div className="mt-12">
+        <div className="flex flex-col md:flex-row items-center justify-center max-w-3xl mx-auto py-8 md:py-12">
+          <div className="relative w-40 h-40 md:w-48 md:h-48 rounded-full overflow-hidden shadow-xl border-4 border-primary flex-shrink-0 bg-background/30 backdrop-blur-sm">
+            <Image
+              src="/profile-harmandeep.jpg" // Assuming this image is in the public folder
+              alt="Harmandeep Singh"
+              layout="fill"
+              objectFit="cover"
+              className="rounded-full"
+              priority
+            />
+          </div>
+          <div className="text-center md:text-left mt-6 md:mt-0 md:ml-8">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-primary mb-3 sm:mb-4">
+              Hi, I’m Harmandeep
+            </h1>
+            <p className="text-lg sm:text-xl md:text-2xl text-foreground/80 leading-relaxed max-w-lg">
+              A passionate tech explorer who loves building smart systems, playing football, and watching fantasy shows like Game of Thrones.
+            </p>
+          </div>
+        </div>
+        <div className="mt-8 md:mt-12 text-center">
          <ScrollDownArrow targetId="about" />
         </div>
       </div>
