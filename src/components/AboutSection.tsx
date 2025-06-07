@@ -1,3 +1,4 @@
+
 import { GraduationCap, Code, Gamepad2, Brain } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -40,7 +41,11 @@ export default function AboutSection() {
             <CardContent>
               <div className="flex flex-wrap gap-2">
                 {skills.map((skill) => (
-                  <Badge key={skill} variant="secondary" className="text-sm bg-accent/10 text-accent-foreground hover:bg-accent/20 px-3 py-1">
+                  <Badge 
+                    key={skill} 
+                    variant="secondary" 
+                    className="text-sm bg-accent text-accent-foreground hover:bg-accent/90 px-3 py-1"
+                  >
                     {skill}
                   </Badge>
                 ))}
