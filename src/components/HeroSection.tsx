@@ -121,18 +121,8 @@ export default function HeroSection() {
       </svg>
 
       <div className="container mx-auto px-4 relative z-10">
-        <div className="flex flex-col md:flex-row items-center justify-center max-w-3xl mx-auto py-8 md:py-12">
-          <div className="relative w-40 h-40 md:w-48 md:h-48 rounded-full overflow-hidden shadow-xl border-4 border-primary flex-shrink-0 bg-background/30 backdrop-blur-sm">
-            <Image
-              src="/profile-harmandeep.jpg"
-              alt="Harmandeep Singh"
-              fill
-              objectFit="cover"
-              className="rounded-full"
-              priority
-            />
-          </div>
-          <div className="text-center md:text-left mt-6 md:mt-0 md:ml-8">
+        <div className="flex flex-col items-center justify-center max-w-3xl mx-auto py-8 md:py-12">
+          <div className="text-center mt-6 md:mt-0">
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-primary mb-3 sm:mb-4">
               Hi, I’m Harmandeep
             </h1>
