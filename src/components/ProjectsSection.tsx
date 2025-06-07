@@ -37,11 +37,21 @@ const projectsData: Project[] = [
   },
   {
     id: "5",
-    title: "REST API with CI/CD",
-    description: "A scalable RESTful API developed with Spring Boot, containerized with Docker, and orchestrated with Kubernetes, including a CI/CD pipeline.",
+    title: "Huffman Coding Implementation",
+    description: "An implementation of the Huffman coding algorithm for lossless data compression. This project demonstrates understanding of priority queues and tree data structures to achieve efficient data encoding.",
     imageUrl: "https://placehold.co/400x250.png",
-    imageHint: "cloud devops",
-    tags: ["Spring Boot", "Docker", "Kubernetes", "CI/CD", "Jenkins"],
+    imageHint: "data compression algorithm",
+    tags: ["Python", "Data Structures", "Algorithms", "Huffman Coding"],
+    repoLink: "", // You can add the repository link later
+  },
+  {
+    id: "6",
+    title: "Asymptotic Genius",
+    description: "A project focused on the analysis and understanding of algorithmic complexity (Big O notation). Explores various algorithms and their performance characteristics. Implemented in Python.",
+    imageUrl: "https://placehold.co/400x250.png",
+    imageHint: "algorithmic analysis",
+    tags: ["Python", "Algorithms", "Complexity Analysis", "Data Structures"],
+    repoLink: "https://github.com/Harman717/Asymptotic-genius",
   },
 ];
 
