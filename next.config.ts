@@ -21,6 +21,12 @@ const nextConfig: NextConfig = {
         hostname: 'miro.medium.com',
         port: '',
         pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'mrakgpp.edu.in',
+        port: '',
+        pathname: '/**',
       }
     ],
   },

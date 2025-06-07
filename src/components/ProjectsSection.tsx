@@ -15,7 +15,7 @@ const projectsData: Project[] = [
     id: "2",
     title: "Training & Placement Web App",
     description: "A web application for managing training and placement activities, connecting students with companies. Built using Spring Boot and React.",
-    imageUrl: "https://placehold.co/400x250.png",
+    imageUrl: "https://mrakgpp.edu.in/wp-content/uploads/2022/04/TPO.jpg",
     imageHint: "job portal",
     tags: ["Spring Boot", "React", "Java", "MySQL"],
   },
