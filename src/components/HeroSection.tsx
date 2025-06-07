@@ -15,47 +15,55 @@ export default function HeroSection() {
         viewBox="0 0 600 600"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
-        className="absolute -top-24 -left-24 w-[500px] h-[500px] md:w-[600px] md:h-[600px] text-primary opacity-15 pointer-events-none transform rotate-[-15deg]"
+        className="absolute -top-24 -left-24 w-[500px] h-[500px] md:w-[600px] md:h-[600px] text-primary opacity-25 pointer-events-none transform rotate-[-15deg]"
         aria-hidden="true"
       >
-        <path d="M100 500 C150 400 250 450 400 350 C450 250 550 300 580 280" stroke="currentColor" strokeWidth="2" fill="none"/>
-        <path d="M50 100 C100 200 200 150 350 250 C400 350 500 300 550 320" stroke="currentColor" strokeWidth="2" fill="none"/>
-        <path d="M150 50 C250 150 300 100 450 200 C500 300 580 250 590 260" stroke="currentColor" strokeWidth="1" fill="none" strokeDasharray="4 4"/>
+        <path d="M100 500 C150 400 250 450 400 350 C450 250 550 300 580 280" stroke="currentColor" strokeWidth="2" fill="none" strokeDasharray="10 5">
+          <animate attributeName="stroke-dashoffset" values="0;25;0" dur="6s" repeatCount="indefinite" />
+        </path>
+        <path d="M50 100 C100 200 200 150 350 250 C400 350 500 300 550 320" stroke="currentColor" strokeWidth="2" fill="none" strokeDasharray="8 4">
+          <animate attributeName="stroke-dashoffset" values="0;-20;0" dur="7s" repeatCount="indefinite" />
+        </path>
+        <path d="M150 50 C250 150 300 100 450 200 C500 300 580 250 590 260" stroke="currentColor" strokeWidth="1" fill="none" strokeDasharray="4 4">
+          <animate attributeName="stroke-dashoffset" values="0;12;0" dur="5s" repeatCount="indefinite" />
+        </path>
+        
+        {/* Circles with more pronounced animations */}
         <circle cx="100" cy="500" r="3" fill="currentColor">
-          <animate attributeName="r" values="3;4;3" dur="6s" repeatCount="indefinite" begin="0s" />
-          <animate attributeName="opacity" values="1;0.6;1" dur="6s" repeatCount="indefinite" begin="0s" />
+          <animate attributeName="r" values="3;6;3" dur="5s" repeatCount="indefinite" begin="0s" />
+          <animate attributeName="opacity" values="1;0.3;1" dur="5s" repeatCount="indefinite" begin="0s" />
         </circle>
         <circle cx="400" cy="350" r="3" fill="currentColor">
-          <animate attributeName="r" values="3;4.5;3" dur="7s" repeatCount="indefinite" begin="0.5s" />
-          <animate attributeName="opacity" values="1;0.5;1" dur="7s" repeatCount="indefinite" begin="0.5s" />
+          <animate attributeName="r" values="3;7;3" dur="6s" repeatCount="indefinite" begin="0.5s" />
+          <animate attributeName="opacity" values="1;0.2;1" dur="6s" repeatCount="indefinite" begin="0.5s" />
         </circle>
         <circle cx="580" cy="280" r="2" fill="currentColor">
-          <animate attributeName="r" values="2;3;2" dur="5s" repeatCount="indefinite" begin="1s" />
-          <animate attributeName="opacity" values="1;0.7;1" dur="5s" repeatCount="indefinite" begin="1s" />
+          <animate attributeName="r" values="2;5;2" dur="4s" repeatCount="indefinite" begin="1s" />
+          <animate attributeName="opacity" values="1;0.4;1" dur="4s" repeatCount="indefinite" begin="1s" />
         </circle>
         <circle cx="50" cy="100" r="3" fill="currentColor">
-          <animate attributeName="r" values="3;4;3" dur="6.5s" repeatCount="indefinite" begin="0.2s" />
-          <animate attributeName="opacity" values="1;0.6;1" dur="6.5s" repeatCount="indefinite" begin="0.2s" />
+          <animate attributeName="r" values="3;6;3" dur="5.5s" repeatCount="indefinite" begin="0.2s" />
+          <animate attributeName="opacity" values="1;0.3;1" dur="5.5s" repeatCount="indefinite" begin="0.2s" />
         </circle>
         <circle cx="350" cy="250" r="3" fill="currentColor">
-          <animate attributeName="r" values="3;4.5;3" dur="7.5s" repeatCount="indefinite" begin="0.7s" />
-          <animate attributeName="opacity" values="1;0.5;1" dur="7.5s" repeatCount="indefinite" begin="0.7s" />
+          <animate attributeName="r" values="3;7;3" dur="6.5s" repeatCount="indefinite" begin="0.7s" />
+          <animate attributeName="opacity" values="1;0.2;1" dur="6.5s" repeatCount="indefinite" begin="0.7s" />
         </circle>
         <circle cx="550" cy="320" r="2" fill="currentColor">
-          <animate attributeName="r" values="2;3.5;2" dur="5.5s" repeatCount="indefinite" begin="1.2s" />
-          <animate attributeName="opacity" values="1;0.7;1" dur="5.5s" repeatCount="indefinite" begin="1.2s" />
+          <animate attributeName="r" values="2;6;2" dur="4.5s" repeatCount="indefinite" begin="1.2s" />
+          <animate attributeName="opacity" values="1;0.4;1" dur="4.5s" repeatCount="indefinite" begin="1.2s" />
         </circle>
         <circle cx="150" cy="50" r="3" fill="currentColor">
-           <animate attributeName="r" values="3;4;3" dur="6s" repeatCount="indefinite" begin="0.4s" />
-           <animate attributeName="opacity" values="1;0.6;1" dur="6s" repeatCount="indefinite" begin="0.4s" />
+           <animate attributeName="r" values="3;5;3" dur="5s" repeatCount="indefinite" begin="0.4s" />
+           <animate attributeName="opacity" values="1;0.3;1" dur="5s" repeatCount="indefinite" begin="0.4s" />
         </circle>
         <circle cx="450" cy="200" r="3" fill="currentColor">
-          <animate attributeName="r" values="3;4.5;3" dur="7s" repeatCount="indefinite" begin="0.9s" />
-          <animate attributeName="opacity" values="1;0.5;1" dur="7s" repeatCount="indefinite" begin="0.9s" />
+          <animate attributeName="r" values="3;7;3" dur="6s" repeatCount="indefinite" begin="0.9s" />
+          <animate attributeName="opacity" values="1;0.2;1" dur="6s" repeatCount="indefinite" begin="0.9s" />
         </circle>
         <circle cx="590" cy="260" r="2" fill="currentColor">
-          <animate attributeName="r" values="2;3;2" dur="5s" repeatCount="indefinite" begin="1.4s" />
-          <animate attributeName="opacity" values="1;0.7;1" dur="5s" repeatCount="indefinite" begin="1.4s" />
+          <animate attributeName="r" values="2;5;2" dur="4s" repeatCount="indefinite" begin="1.4s" />
+          <animate attributeName="opacity" values="1;0.4;1" dur="4s" repeatCount="indefinite" begin="1.4s" />
         </circle>
       </svg>
 
@@ -66,44 +74,45 @@ export default function HeroSection() {
         viewBox="0 0 400 400"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
-        className="absolute -bottom-20 -right-20 w-[300px] h-[300px] md:w-[400px] md:h-[400px] text-accent opacity-10 pointer-events-none transform rotate-[10deg]"
+        className="absolute -bottom-20 -right-20 w-[300px] h-[300px] md:w-[400px] md:h-[400px] text-accent opacity-20 pointer-events-none transform rotate-[10deg]"
         aria-hidden="true"
       >
-        <circle cx="100" cy="100" r="80" stroke="currentColor" strokeWidth="1" opacity="0.5">
-           <animate attributeName="opacity" values="0.5;0.8;0.5" dur="8s" repeatCount="indefinite" />
+        <circle cx="100" cy="100" r="80" stroke="currentColor" strokeWidth="1">
+           <animate attributeName="opacity" values="0.3;0.9;0.3" dur="8s" repeatCount="indefinite" />
         </circle>
-        <circle cx="100" cy="100" r="60" stroke="currentColor" strokeWidth="1" strokeDasharray="2 6" opacity="0.4">
-          <animate attributeName="opacity" values="0.4;0.7;0.4" dur="7s" repeatCount="indefinite" begin="1s" />
-          <animateTransform attributeName="transform" type="rotate" from="0 100 100" to="360 100 100" dur="120s" repeatCount="indefinite" />
+        <circle cx="100" cy="100" r="60" stroke="currentColor" strokeWidth="1" strokeDasharray="2 6">
+          <animate attributeName="opacity" values="0.2;0.8;0.2" dur="7s" repeatCount="indefinite" begin="1s" />
+          <animateTransform attributeName="transform" type="rotate" from="0 100 100" to="360 100 100" dur="100s" repeatCount="indefinite" />
         </circle>
-        <circle cx="100" cy="100" r="40" stroke="currentColor" strokeWidth="1" opacity="0.3">
-           <animate attributeName="opacity" values="0.3;0.6;0.3" dur="6s" repeatCount="indefinite" begin="2s" />
+        <circle cx="100" cy="100" r="40" stroke="currentColor" strokeWidth="1">
+           <animate attributeName="opacity" values="0.1;0.7;0.1" dur="6s" repeatCount="indefinite" begin="2s" />
         </circle>
 
-        <rect x="150" y="150" width="10" height="10" fill="currentColor" opacity="0.3">
-          <animate attributeName="opacity" values="0.3;0.7;0.3" dur="4s" begin="0.5s" repeatCount="indefinite" />
+        {/* Rects with more pronounced flicker */}
+        <rect x="150" y="150" width="10" height="10" fill="currentColor">
+          <animate attributeName="opacity" values="0.1;0.8;0.1" dur="3s" begin="0.5s" repeatCount="indefinite" />
         </rect>
-        <rect x="170" y="150" width="10" height="10" fill="currentColor" opacity="0.2">
-          <animate attributeName="opacity" values="0.2;0.6;0.2" dur="4.5s" begin="1s" repeatCount="indefinite" />
+        <rect x="170" y="150" width="10" height="10" fill="currentColor">
+          <animate attributeName="opacity" values="0.1;0.7;0.1" dur="3.5s" begin="1s" repeatCount="indefinite" />
         </rect>
-        <rect x="190" y="150" width="10" height="10" fill="currentColor" opacity="0.4">
-           <animate attributeName="opacity" values="0.4;0.8;0.4" dur="3.5s" begin="1.5s" repeatCount="indefinite" />
+        <rect x="190" y="150" width="10" height="10" fill="currentColor">
+           <animate attributeName="opacity" values="0.2;0.9;0.2" dur="2.5s" begin="1.5s" repeatCount="indefinite" />
         </rect>
-        <rect x="150" y="170" width="10" height="10" fill="currentColor" opacity="0.2">
-           <animate attributeName="opacity" values="0.2;0.5;0.2" dur="5s" begin="0.8s" repeatCount="indefinite" />
+        <rect x="150" y="170" width="10" height="10" fill="currentColor">
+           <animate attributeName="opacity" values="0.1;0.6;0.1" dur="4s" begin="0.8s" repeatCount="indefinite" />
         </rect>
-        <rect x="170" y="170" width="10" height="10" fill="currentColor" opacity="0.4">
-           <animate attributeName="opacity" values="0.4;0.7;0.4" dur="4.2s" begin="1.2s" repeatCount="indefinite" />
+        <rect x="170" y="170" width="10" height="10" fill="currentColor">
+           <animate attributeName="opacity" values="0.2;0.8;0.2" dur="3.2s" begin="1.2s" repeatCount="indefinite" />
         </rect>
-        <rect x="190" y="170" width="10" height="10" fill="currentColor" opacity="0.3">
-           <animate attributeName="opacity" values="0.3;0.6;0.3" dur="3.8s" begin="1.8s" repeatCount="indefinite" />
+        <rect x="190" y="170" width="10" height="10" fill="currentColor">
+           <animate attributeName="opacity" values="0.1;0.7;0.1" dur="2.8s" begin="1.8s" repeatCount="indefinite" />
         </rect>
 
-        <path d="M250 50 L350 150 L250 250 L150 150 Z" stroke="currentColor" strokeWidth="0.5" opacity="0.2">
-          <animate attributeName="opacity" values="0.2;0.4;0.2" dur="9s" repeatCount="indefinite" begin="1s" />
+        <path d="M250 50 L350 150 L250 250 L150 150 Z" stroke="currentColor" strokeWidth="0.5">
+          <animate attributeName="opacity" values="0.1;0.5;0.1" dur="9s" repeatCount="indefinite" begin="1s" />
         </path>
-        <line x1="50" y1="300" x2="300" y2="50" stroke="currentColor" strokeWidth="0.5" opacity="0.2">
-           <animate attributeName="opacity" values="0.2;0.3;0.2" dur="10s" repeatCount="indefinite" />
+        <line x1="50" y1="300" x2="300" y2="50" stroke="currentColor" strokeWidth="0.5">
+           <animate attributeName="opacity" values="0.1;0.4;0.1" dur="10s" repeatCount="indefinite" />
         </line>
       </svg>
 
