@@ -126,7 +126,7 @@ export default function HeroSection() {
             <Image
               src="/profile-harmandeep.jpg"
               alt="Harmandeep Singh"
-              layout="fill"
+              fill
               objectFit="cover"
               className="rounded-full"
               priority
@@ -137,7 +137,7 @@ export default function HeroSection() {
               Hi, I’m Harmandeep
             </h1>
             <p className="text-lg sm:text-xl md:text-2xl text-foreground/80 leading-relaxed max-w-lg">
-              A passionate tech explorer who loves building smart systems, playing football, and watching fantasy shows like Game of Thrones.
+              A passionate tech explorer with a love for building intelligent systems, kicking it on the football field, and diving into epic fantasy worlds like Game of Thrones. Always curious, always building.
             </p>
           </div>
         </div>
