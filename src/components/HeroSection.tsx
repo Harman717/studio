@@ -1,7 +1,7 @@
 
-import Image from "next/image";
 import ScrollDownArrow from "./ScrollDownArrow";
 import { Card, CardContent } from "@/components/ui/card";
+import AiCoreAnimation from "./AiCoreAnimation"; // Import the new component
 
 export default function HeroSection() {
   return (
@@ -61,15 +61,9 @@ export default function HeroSection() {
       <div className="container mx-auto px-4 relative z-10">
         <Card className="max-w-3xl mx-auto bg-card/80 backdrop-blur-sm shadow-xl overflow-hidden">
           <CardContent className="p-8 md:p-12 flex flex-col md:flex-row items-center gap-8">
-            <div className="relative w-40 h-40 md:w-48 md:h-48 rounded-full overflow-hidden shadow-lg border-4 border-primary flex-shrink-0">
-              <Image
-                src="/profile-harmandeep.jpg"
-                alt="Harmandeep Singh"
-                layout="fill"
-                objectFit="cover"
-                data-ai-hint="profile photo"
-                priority
-              />
+            <div className="relative w-40 h-40 md:w-48 md:h-48 rounded-full overflow-hidden shadow-lg border-4 border-primary flex-shrink-0 flex items-center justify-center bg-background/10">
+              {/* Replace Image with AiCoreAnimation */}
+              <AiCoreAnimation />
             </div>
             <div className="text-left">
               <h1 className="text-4xl md:text-5xl font-bold text-primary mb-4">
