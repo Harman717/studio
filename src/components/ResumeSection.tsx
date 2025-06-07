@@ -12,14 +12,11 @@ export default function ResumeSection() {
           Interested in learning more about my professional experience and qualifications? Download my resume to get a comprehensive overview.
         </p>
         <Button size="lg" asChild className="bg-accent hover:bg-accent/90 text-accent-foreground shadow-md hover:shadow-lg transition-shadow">
-          <a href="/resume_harmandeep_singh.pdf" download="Harmandeep_Singh_Resume.pdf">
+          <a href="/HarmanSiingh.pdf" download="Harmandeep_Singh_Resume.pdf">
             <Download className="mr-2 h-5 w-5" />
             Download Resume (PDF)
           </a>
         </Button>
-        <p className="mt-4 text-sm text-muted-foreground">
-          (Note: This is a placeholder link. Please replace `public/resume_harmandeep_singh.pdf` with your actual resume.)
-        </p>
       </div>
     </section>
   );
