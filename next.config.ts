@@ -46,6 +46,12 @@ const nextConfig: NextConfig = {
         hostname: 'satorianalytics.com',
         port: '',
         pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'b2633864.smushcdn.com',
+        port: '',
+        pathname: '/**',
       }
     ],
   },

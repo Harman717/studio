@@ -31,7 +31,7 @@ const projectsData: Project[] = [
     id: "4",
     title: "Handwriting Recognition",
     description: "A TensorFlow-based model for recognizing handwritten digits and characters, trained on the MNIST dataset.",
-    imageUrl: "https://user-images.githubusercontent.com/73981982/116196276-402f1280-a76e-11eb-9e41-0ad26063189c.png",
+    imageUrl: "https://b2633864.smushcdn.com/2633864/wp-content/uploads/2020/08/ocr_keras_tensorflow_datasets.png?lossy=2&strip=1&webp=1",
     imageHint: "neural network",
     tags: ["TensorFlow", "Python", "Keras", "Machine Learning"],
   },
